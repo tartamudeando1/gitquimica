@@ -86,7 +86,7 @@ header {
 }
 
 .links-principais {
-    width: 80%;
+    width: 50%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -96,8 +96,8 @@ header {
 .lista-horizontal {
     list-style: none;
     display: flex;
-    font-size: 2rem;
-    gap: 17rem;
+    font-size: 1rem;
+    gap: 15rem;
 }
 
 
@@ -118,8 +118,8 @@ main {
 h1 {
     text-align: center;
     color: var(--verde);
-    margin-bottom: 60px;
-    font-size: 4rem;
+    margin-bottom: 50px;
+    font-size: 3rem;
 }
 
 .biologia-container {
@@ -136,14 +136,14 @@ h1 {
     border-radius: 10px;
     padding: 30px;
     width: 80%;
-    min-width: 280px;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    min-width: 250px;
+    box-shadow: 4px 5px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .conteudo:hover {
     transform: translateY(-10px) scale(1.05);
-    box-shadow: 0 0 0 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 0 23px rgba(0, 0, 0, 0.2);
 }
 
 .conteudo h2 {
@@ -213,7 +213,7 @@ h1 {
 
 .conteudo ul li:hover .opacidade {
     opacity: 1;
-    max-height: 320px;
+    max-height: 300px;
     text-align: justify;
     color: var(--marinho);
     margin-bottom: 5px;
