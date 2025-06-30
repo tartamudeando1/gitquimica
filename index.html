@@ -1,37 +1,95 @@
-<!-- Página inicial -->
-  <section id="home" class="active">
-    <div class="materias">
-      <div class="materia">
-        <h2>Biologia</h2>
-        <div class="box-container">
-          <div class="box">Provas</div>
-          <div class="box">Relatórios</div>
-          <div class="box">Atividades</div>
-        </div>
-      </div>
-      <div class="materia">
-        <h2>Matemática</h2>
-        <div class="box-container">
-          <div class="box">Provas</div>
-          <div class="box">Relatórios</div>
-          <div class="box">Atividades</div>
-        </div>
-      </div>
-      <div class="materia">
-        <h2>Química</h2>
-        <div class="box-container">
-          <div class="box">Provas</div>
-          <div class="box">Relatórios</div>
-          <div class="box">Atividades</div>
-        </div>
-      </div>
-      <div class="materia">
-        <h2>Física</h2>
-        <div class="box-container">
-          <div class="box">Provas</div>
-          <div class="box">Relatórios</div>
-          <div class="box">Atividades</div>
-        </div>
-      </div>
-    </div>
-  </section>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal Escolar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .materias {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+      justify-content: center;
+    }
+    .materia {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      width: 250px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .materia:hover {
+      transform: scale(1.05);
+    }
+    .materia h2 {
+      color: #0074D9;
+    }
+    .box-container {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 15px;
+    }
+    .box {
+      background-color: #e0e0e0;
+      padding: 10px;
+      border-radius: 8px;
+      width: 30%;
+      font-size: 0.9em;
+    }
+    section {
+      display: none;
+      padding: 20px;
+    }
+    section.active {
+      display: block;
+    }
+    .content-boxes {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .content-boxes .box {
+      flex: 1;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Portal Escolar</h1>
+    <nav>
+      <a href="#" onclick="mostrarPagina('home')">Início</a>
+      <a href="#" onclick="mostrarPagina('biologia')">Biologia</a>
+      <a href="#" onclick="mostrarPagina('matematica')">Matemática</a>
+      <a href="#" onclick="mostrarPagina('quimica')">Química</a>
+      <a href="#" onclick="mostrarPagina('fisica')">Física</a>
+    </nav>
+  </header>
