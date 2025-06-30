@@ -1,0 +1,14 @@
+.box {
+  background-color: #e0e0e0;
+  padding: 20px;
+  border-radius: 8px;
+  max-height: 60px; /* altura inicial pequena */
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  cursor: pointer;
+}
+
+/* Ao passar o mouse, a caixa expande para mostrar mais conteúdo */
+.box:hover {
+  max-height: 200px; /* altura expandida */
+}
