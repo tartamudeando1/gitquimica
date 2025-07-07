@@ -55,9 +55,9 @@ section {
 .content-boxes {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 40px;
   justify-content: center;
-  margin-top: 15px;
+  margin-top: 30px;
 }
 
 .content-boxes .box {
